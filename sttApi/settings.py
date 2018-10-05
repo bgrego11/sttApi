@@ -25,7 +25,7 @@ SECRET_KEY = '733w-d-3+17$3d#xwe#g5f6u0$&a4dfk%603hi=c6ch1t)w1j)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sttapi.herokuapp.com']
 
 
 # Application definition
