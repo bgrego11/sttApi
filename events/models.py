@@ -9,7 +9,7 @@ class Event(models.Model):
     logdate = models.DateTimeField()
     address = models.TextField()
     created_date = models.DateTimeField(
-            default=timezone.now, input_formats=['%b %d, %Y'])
+            default="America/New_York", input_formats=['%b %d, %Y'])
 
 
     def __str__(self):
