@@ -12,6 +12,11 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 import django_heroku
+
+
+from django.conf.locale.en import formats as en_formats 
+en_formats.DATETIME_FORMAT = "d-m-Y h:i:s"
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
