@@ -8,7 +8,7 @@ class EventAdmin(admin.ModelAdmin):
     #     return obj.logdate.strftime("%d %b %Y %I:%M:%S")
     # time_seconds.admin_order_field = 'datetimefield'
     # time_seconds.short_description = 'Precise Time' 
-    list_display = ["name", "logdate", "address"]
+    list_display = ["name", "logdate", "address", "created_date"]
     
    
 
