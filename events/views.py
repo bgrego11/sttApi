@@ -13,5 +13,5 @@ class EventViewSet(viewsets.ModelViewSet):
     API endpoint that allows users to be viewed or edited.
     """
     today = datetime.datetime.today()
-    queryset = Event.objects.filter(logdate__gte = today).order_by('created_date')
+    queryset = Event.objects.filter(logdate__lte=today).order_by('created_date')
     serializer_class = EventsSerializer
