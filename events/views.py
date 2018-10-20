@@ -2,6 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets
 from .serializers import EventsSerializer
 from .models import Event
+import datetime
 
 # Create your views here.
 def index(request):
